@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Welcome to Fastapi!</h1>
+    <p>This is a simple Fastapi application.</p>
+
+    <h2>Posts</h2>
+    <ul>
+        {% for post in posts %}
+            <li><h3>{{ post.title }}</h3>
+                <p>{{ post.content }}</p>
+            </li>
+        {% endfor %}
+    </ul>   
+{% endblock content %}
